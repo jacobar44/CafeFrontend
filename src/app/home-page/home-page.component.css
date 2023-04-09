@@ -2,20 +2,19 @@
 #second-section{
     list-style-type: none;
     margin: 0;
-   padding: 1%;
+   
     overflow: hidden;
-    
-    position: fixed;
-    top: 170px;
-    width: 100%;
   
+    position: fixed;
+    top:55px;
+    width: 100%;
+   justify-content: center;
    text-align: center;
    left: 0;
    display: flex;
 }
 #latte-label{
-padding-top: 2%;
-padding-left: 46%;
+justify-self: center;
 font-size:200%;
 }
 #top-section{
@@ -31,10 +30,12 @@ font-size:200%;
    text-align: center;
    left: 0;
    display: flex;
+   flex-direction: column;
   
 }
 #coffee-main{
     width: 150px;
     justify-self: center;
+    margin-top: 1.5%;
    
 }
