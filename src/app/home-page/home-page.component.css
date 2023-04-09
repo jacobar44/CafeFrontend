@@ -4,7 +4,7 @@
     margin: 0;
    padding: 1%;
     overflow: hidden;
-    background-color:slategray;
+    
     position: fixed;
     top: 170px;
     width: 100%;
@@ -14,16 +14,16 @@
    display: flex;
 }
 #latte-label{
-padding-top: 0%;
-padding-left: 47%;
-font-size:100%;
+padding-top: 2%;
+padding-left: 46.5%;
+font-size:200%;
 }
 #top-section{
     list-style-type: none;
     margin: 0;
    
     overflow: hidden;
-    background-color:slategray;
+  
     position: fixed;
     top:55px;
     width: 100%;
@@ -35,5 +35,6 @@ font-size:100%;
 }
 #coffee-main{
     width: 150px;
+    margin-top: 2%;
    
 }
