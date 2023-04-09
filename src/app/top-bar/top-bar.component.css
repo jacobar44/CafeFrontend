@@ -1,0 +1,28 @@
+#outer{
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    background-color:#351B01;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+   left: 0;
+   display: flex;
+}
+#logo-image{
+   width: 5%;
+   height: 5%;
+ 
+}
+#banner-image{
+   width: 37.5%;
+   height: 50%;
+   margin-top: 2.25%;
+   right:100%;
+}
+#banner-div{
+padding-left: 44%;
+padding-top: .5%;
+}

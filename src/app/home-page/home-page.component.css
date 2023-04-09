@@ -1,0 +1,39 @@
+
+#second-section{
+    list-style-type: none;
+    margin: 0;
+   padding: 1%;
+    overflow: hidden;
+    background-color:slategray;
+    position: fixed;
+    top: 170px;
+    width: 100%;
+  
+   text-align: center;
+   left: 0;
+   display: flex;
+}
+#latte-label{
+padding-top: 0%;
+padding-left: 47%;
+font-size:100%;
+}
+#top-section{
+    list-style-type: none;
+    margin: 0;
+   
+    overflow: hidden;
+    background-color:slategray;
+    position: fixed;
+    top:55px;
+    width: 100%;
+   justify-content: center;
+   text-align: center;
+   left: 0;
+   display: flex;
+  
+}
+#coffee-main{
+    width: 150px;
+   
+}
