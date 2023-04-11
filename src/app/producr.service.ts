@@ -9,15 +9,15 @@ import { Product } from './product';
 })
 export class ProducrService {
 
-  products!: Product[];
+  product!: Product;
   baseURL: string = 'http://localhost:8088/products/';
 
   constructor(private httpClient: HttpClient) { }
 
   getProductById(productId: number): Observable<Product>{
-    return this.httpClient.get<Product[]>(this.baseURL + 'find?id='+ productId).pipe(
+    return this.httpClient.get<Product>(`${this.baseURL}getone?id=3`).pipe(
       map((response) => {
-        this.products = response;
+        this.product = response;
         return response;
       }),
       catchError(this.handleError<any>())
