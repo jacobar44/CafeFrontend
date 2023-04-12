@@ -9,13 +9,15 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductPreviewComponent } from './product-preview/product-preview.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductPreviewListComponent } from './product-preview-list/product-preview-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     TopBarComponent,
-    ProductPreviewComponent
+    ProductPreviewComponent,
+    ProductPreviewListComponent
   ],
   imports: [
     BrowserModule,
