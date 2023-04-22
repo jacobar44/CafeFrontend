@@ -1,41 +1,4 @@
-
-#second-section{
-    list-style-type: none;
-    margin: 0;
-   
-    overflow: hidden;
-  
-    position: fixed;
-    top:55px;
-    width: 100%;
-   justify-content: center;
-   text-align: center;
-   left: 0;
+#outer{
    display: flex;
-}
-#latte-label{
-justify-self: center;
-font-size:200%;
-}
-#top-section{
-    list-style-type: none;
-    margin: 0;
-   
-    overflow: hidden;
-  
-    position: fixed;
-    top:55px;
-    width: 100%;
-   justify-content: center;
-   text-align: center;
-   left: 0;
-   display: flex;
-   flex-direction: column;
-  
-}
-#coffee-main{
-    width: 150px;
-    justify-self: center;
-    margin-top: 1.5%;
-   
+   flex-direction: row;
 }
