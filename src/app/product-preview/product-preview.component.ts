@@ -20,10 +20,15 @@ export class ProductPreviewComponent implements OnInit {
     
   ) {}
 
+  // ngOnInit(): void {
+  //   this.producrService
+  //     .getProductById(parseInt(this.routes.snapshot.paramMap.get('id')!))
+  //     .subscribe((response) => (this.product = response));
+  //     console.log(this.product+"+");
+  // }
+
   ngOnInit(): void {
-    this.producrService
-      .getProductById(parseInt(this.routes.snapshot.paramMap.get('id')!))
-      .subscribe((response) => (this.product = response));
+    console.log(this.product+"list view");
   }
 
 }

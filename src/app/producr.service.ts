@@ -10,6 +10,7 @@ import { Product } from './product';
 export class ProducrService {
 
   product!: Product;
+  products!:Product[];
   baseURL: string = 'http://localhost:8088/products/';
 
   constructor(private httpClient: HttpClient) { }
@@ -24,8 +25,21 @@ export class ProducrService {
     );
   }
 
+  getProductAll(): Observable<Product[]>{
+    return this.httpClient.get<Product[]>(this.baseURL + "getAll").pipe(
+      map((response) => {
+        this.products = response;
+        console.log(this.products);
+        return this.products;
+      }),
+      catchError(this.handleError<any>())
+    );
+  }
+
+  
+
   private handleError<T>(result?: T) {
-    console.log('some error happened...');
+    console.log('some errors happened... '+result);
     return result;
   }
 
