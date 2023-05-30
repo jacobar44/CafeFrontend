@@ -10,6 +10,8 @@ import { ProductPreviewComponent } from './product-preview/product-preview.compo
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductPreviewListComponent } from './product-preview-list/product-preview-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { ProductPreviewListComponent } from './product-preview-list/product-prev
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
