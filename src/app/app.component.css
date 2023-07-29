@@ -1,6 +1,6 @@
 #layout{
     display: flex;
-   
+    flex-direction: column;
 }
 #lower{
     margin-top: 7%;
