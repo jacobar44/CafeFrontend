@@ -1,9 +1,13 @@
 
 #latte-label{
-margin-left: 25%;
-font-size:200%;
+font-size:150%;
 }
 #price{
     margin-left: 35%;   
 }
+.example-headers-align .mat-panel-title {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 

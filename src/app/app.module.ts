@@ -13,6 +13,7 @@ import { ProductPreviewListComponent } from './product-preview-list/product-prev
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatFormFieldModule
 
   ],
   providers: [],
