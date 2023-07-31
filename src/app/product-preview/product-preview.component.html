@@ -13,8 +13,15 @@
               </mat-panel-title>
             </mat-expansion-panel-header>
             <div>
-                <strong id="price">{{product.price}}</strong>
-                </div>
+            <div>
+            <strong id="price">${{product.price}}</strong>
+            </div>
+            <div id="buttons">
+                <button id="increaseButton" mat-mini-fab color="primary">-</button>
+                <output id="out" type="number" value="5">5</output>
+                <button id="increaseButton" mat-mini-fab color="primary">+</button>
+            </div>
+        </div>
           </mat-expansion-panel>
     </div>
     </div>

@@ -5,9 +5,23 @@ font-size:150%;
 #price{
     margin-left: 35%;   
 }
-.example-headers-align .mat-panel-title {
+ .mat-panel-title {
     justify-content: space-between;
     align-items: center;
   }
-  
+
+#increaseButton{
+    background-color: green;
+    margin-left: 30%; 
+}
+#buttons{
+    display: flex;
+    
+   flex-direction: row;
+   margin-right: 50%; 
+}
+#out{
+    background-color: grey;
+    
+}
 
