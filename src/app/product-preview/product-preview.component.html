@@ -16,10 +16,15 @@
             <div>
             <strong id="price">${{product.price}}</strong>
             </div>
+            <br>
             <div id="buttons">
                 <button id="increaseButton" mat-mini-fab color="primary">-</button>
-                <output id="out" type="number" value="5">5</output>
-                <button id="increaseButton" mat-mini-fab color="primary">+</button>
+                <output id="out" type="number" value="5"></output>
+                <button id="increaseButton" mat-mini-fab color="primary" (click)="addToCart()">+</button>
+            </div>
+        <br>
+            <div>
+                <button id="add" mat-raised-button color="primary">Add</button>
             </div>
         </div>
           </mat-expansion-panel>

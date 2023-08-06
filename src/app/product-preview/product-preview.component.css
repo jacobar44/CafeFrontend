@@ -20,6 +20,12 @@ font-size:150%;
    flex-direction: row;
    margin-right: 50%; 
 }
+#add{
+    display: flex;
+    background-color: green;
+   flex-direction: row;
+   margin-left: 25%; 
+}
 #out{
     background-color: grey;
     

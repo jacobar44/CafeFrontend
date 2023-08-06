@@ -16,13 +16,14 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     TopBarComponent,
     ProductPreviewComponent,
-    ProductPreviewListComponent
+    ProductPreviewListComponent,
   ],
   imports: [
     BrowserModule,

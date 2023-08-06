@@ -3,6 +3,7 @@ import { FormBuilder, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../product';
 import { ProducrService } from '../producr.service';
+import { ActiveProductService } from '../active-product.service';
 
 @Component({
   selector: 'app-product-preview',
@@ -16,7 +17,8 @@ export class ProductPreviewComponent implements OnInit {
     private routes: ActivatedRoute,
     private producrService: ProducrService,
     private fb: FormBuilder,
-    private router: Router
+    private router: Router,
+    private activeProductService:ActiveProductService
     
   ) {}
 
@@ -26,6 +28,11 @@ export class ProductPreviewComponent implements OnInit {
   //     .subscribe((response) => (this.product = response));
   //     console.log(this.product+"+");
   // }
+
+  addToCart() :void{
+console.log("adding to cart");
+this.activeProductService
+  }
 
   ngOnInit(): void {
     console.log(this.product+"list view");
