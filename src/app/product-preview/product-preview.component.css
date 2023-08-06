@@ -10,6 +10,10 @@ font-size:150%;
     align-items: center;
   }
 
+  #priceDisplay{
+    margin-left: 15%; 
+  }
+
 #increaseButton{
     background-color: green;
     margin-left: 30%; 
@@ -18,7 +22,7 @@ font-size:150%;
     display: flex;
     
    flex-direction: row;
-   margin-right: 50%; 
+   margin-right: 70%; 
 }
 #add{
     display: flex;
@@ -28,6 +32,6 @@ font-size:150%;
 }
 #out{
     background-color: grey;
-    
+    margin-left: 35%;   
 }
 

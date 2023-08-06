@@ -23,7 +23,7 @@ export class ActiveProductService {
     newActiveProduct.aid = 0;
     console.log(newActiveProduct);
     return this.httpClient.post<ActiveProduct>(
-      this.baseURL + 'add',
+      this.baseURL + 'addOne',
       newActiveProduct,
       this.postHeader
     );

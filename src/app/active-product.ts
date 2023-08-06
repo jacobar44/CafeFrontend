@@ -3,6 +3,6 @@ export class ActiveProduct {
         public pid: number,
         public aid: number,
         public catid: number,
-        public quantity: string
+        public quantity: number
     ){}
 }

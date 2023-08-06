@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../product';
 import { ProducrService } from '../producr.service';
 import { ActiveProductService } from '../active-product.service';
+import { ActiveProduct } from '../active-product';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { ActiveProductService } from '../active-product.service';
 export class ProductPreviewComponent implements OnInit {
 
   @Input() product!:Product;
+  @Input() activeProduct!:ActiveProduct;
   quantity:number = 0;
   constructor(
     private routes: ActivatedRoute,
@@ -32,17 +34,22 @@ export class ProductPreviewComponent implements OnInit {
 
   addToCart() :void{
 console.log("adding to cart");
-this.activeProductService
+
+this.activeProductService.addToCart(new ActiveProduct(this.product.pid,0,0,this.quantity)).subscribe((response) => (this.activeProduct = response));
+console.log(this.activeProduct);
   }
 
   addToQuantity() :void{
-    console.log("adding to cart");
+    console.log("adding to quantity");
     this.quantity++;
       }
 
       subToQuantity():void{
         console.log("adding to cart");
-        this.quantity--;
+        if(this.quantity!=0){
+          this.quantity--;
+        }
+        
           }
 
   ngOnInit(): void {
