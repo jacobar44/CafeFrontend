@@ -29,5 +29,19 @@ export class ActiveProductService {
     );
   }
 
+  getProductById(): Observable<number>{
+    
+    return this.httpClient.get<number>(`${this.baseURL}count`).pipe(
+      map((response) => {
+        return response;
+      }),
+      catchError(this.handleError<any>())
+    );
+  }
+
+  private handleError<T>(result?: T) {
+    console.log('some errors happened... '+result);
+    return result;
+  }
 
 }

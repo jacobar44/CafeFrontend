@@ -17,6 +17,7 @@ export class ProductPreviewComponent implements OnInit {
   @Input() product!:Product;
   @Input() activeProduct!:ActiveProduct;
   quantity:number = 0;
+  cartId:number=0;
   constructor(
     private routes: ActivatedRoute,
     private producrService: ProducrService,
@@ -33,9 +34,8 @@ export class ProductPreviewComponent implements OnInit {
   // }
 
   addToCart() :void{
-console.log("adding to cart");
-
-this.activeProductService.addToCart(new ActiveProduct(this.product.pid,0,0,this.quantity)).subscribe((response) => (this.activeProduct = response));
+console.log("adding to cart"+(this.cartId==0) );
+this.activeProductService.addToCart(new ActiveProduct(this.product.pid,0,this.cartId,this.quantity)).subscribe((response) => (this.activeProduct = response));
 console.log(this.activeProduct);
   }
 
@@ -54,6 +54,7 @@ console.log(this.activeProduct);
 
   ngOnInit(): void {
     console.log(this.product+"list view");
+    this.activeProductService.getProductById().subscribe((response) => (this.cartId = response));
   }
 
 }
