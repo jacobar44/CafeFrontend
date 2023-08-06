@@ -18,10 +18,14 @@
             </div>
             <br>
             <div id="buttons">
-                <button id="increaseButton" mat-mini-fab color="primary">-</button>
-                <output id="out" type="number" value="5"></output>
-                <button id="increaseButton" mat-mini-fab color="primary" (click)="addToCart()">+</button>
+                <button id="increaseButton" mat-mini-fab color="primary" (click)="subToQuantity()">-</button>
+                <output id="out" type="number" value="5">{{quantity}}</output>
+                <button id="increaseButton" mat-mini-fab color="primary" (click)="addToQuantity()">+</button>
             </div>
+        <br>
+        <div>
+        <output id="out" type="number" value="5">${{quantity*product.price}}</output>
+    </div>
         <br>
             <div>
                 <button id="add" mat-raised-button color="primary">Add</button>
@@ -30,5 +34,5 @@
           </mat-expansion-panel>
     </div>
     </div>
-
+    
    
